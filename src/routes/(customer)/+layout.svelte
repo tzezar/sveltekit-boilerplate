@@ -1,0 +1,2 @@
+layout customer
+<slot/>

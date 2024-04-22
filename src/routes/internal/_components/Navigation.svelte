@@ -2,52 +2,23 @@
 	import NavigationItem from './NavigationItem.svelte';
 	import type { Items } from './types';
 	import MaterialSymbolsLightApkDocument from '~icons/material-symbols-light/apk-document';
-
+	import StreamlineMoneyCashierTagCodesTagsTagProductLabel from '~icons/streamline/money-cashier-tag-codes-tags-tag-product-label'
+	import { urls } from '$lib/navigation';
 	let items: Items = [
 		{
-			title: 'Dokumenty',
-			url: '/internal',
-			icon: MaterialSymbolsLightApkDocument,
-			subItems: [
-				{
-					title: 'Wydania',
-					url: '/internal/about',
-					subItems: [
-						{
-							title: 'Zewnętrzne',
-							url: '/internal/about'
-						},
-						{
-							title: 'Wewnętrzne',
-							url: '/internal/about'
-						}
-					]
-				},
-				{
-					title: 'Home',
-					url: '/internal'
-				},
-				{
-					title: 'Home',
-
-					url: '/internal'
-				}
-			]
+			title: 'Products',
+			url: urls.internal.products,
+			icon: StreamlineMoneyCashierTagCodesTagsTagProductLabel
 		},
 		{
-			title: 'Home',
-			url: '/internal',
-			icon: MaterialSymbolsLightApkDocument
-		},
-		{
-			title: 'Home',
-			url: '/internal',
+			title: 'Orders',
+			url: urls.internal.orders,
 			icon: MaterialSymbolsLightApkDocument
 		}
 	];
 </script>
 
-<ul class="space-y-2">
+<ul class="">
 	{#each items as item}
 		<NavigationItem {item} level={1} />
 	{/each}

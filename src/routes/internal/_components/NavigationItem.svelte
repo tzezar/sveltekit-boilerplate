@@ -15,7 +15,7 @@
 	export let level: number;
 </script>
 
-<li>
+<li class='my-1'>
 	{#if item.subItems}
 		<button
 			type="button"

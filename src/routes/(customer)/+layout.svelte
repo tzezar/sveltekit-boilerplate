@@ -1,2 +1,1 @@
-layout customer
-<slot/>
+<slot />

@@ -3,8 +3,8 @@
 	"style": "default",
 	"tailwind": {
 		"config": "tailwind.config.js",
-		"css": "src\\app.pcss",
-		"baseColor": "zinc"
+		"css": "src/app.pcss",
+		"baseColor": "gray"
 	},
 	"aliases": {
 		"components": "$lib/components",

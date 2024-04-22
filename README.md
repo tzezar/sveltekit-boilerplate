@@ -1,38 +1,24 @@
-# create-svelte
+# frontend boilerplate
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+This is my starter project for most projects to save time on the initial setup.
 
-## Creating a project
+## What's here?
+I'm aiming for end-to-end type safety here with a REST api thanks to `openapi-fetch`.
+All components from shadcn-svelte are installed.
 
-If you're seeing this, you've probably already done this step. Congrats!
+- `sveltekit`
+- `@tanstack/svelte-query` for better data fetching
+- `@tanstack/svelte-query-devtools` for debuging
+- `openapi-fetch` for amazing type safety from rest-api
+- `shadcn-svelte` for nice components
+- `tailwindcss` for styling
+- `unplugin-icons` for best icons out there
+- `vitest` for testing 
+- `@sinclair/typebox` for validation
+- `mode-watcher` for darkmode
+- `sveltekit-superforms` for form handling
+- `tailwind-merge` as utility helper
+- `svelte-legos` as ultility
+- `formsnap` as helper for shadcn and superforms
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Basic configuration of everything + simple layout with hideable menu (app shell) + auth.

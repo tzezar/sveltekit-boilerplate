@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Pagination as PaginationPrimitive } from "bits-ui";
-	import ChevronLeft from "lucide-svelte/icons/chevron-left";
+	import MdiChevronLeft from '~icons/mdi/chevron-left'
 	import { Button } from "$lib/components/ui/button/index.js";
 	import { cn } from "$lib/utils.js";
 
@@ -20,7 +20,7 @@
 		{...$$restProps}
 	>
 		<slot>
-			<ChevronLeft class="h-4 w-4" />
+			<MdiChevronLeft class="h-4 w-4" />
 			<span>Previous</span>
 		</slot>
 	</Button>

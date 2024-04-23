@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { RangeCalendar as RangeCalendarPrimitive } from "bits-ui";
-	import ChevronRight from "lucide-svelte/icons/chevron-right";
+	import MdiChevronRight from '~icons/mdi/chevron-right'
 	import { buttonVariants } from "$lib/components/ui/button/index.js";
 	import { cn } from "$lib/utils.js";
 
@@ -22,6 +22,6 @@
 	let:builder
 >
 	<slot {builder}>
-		<ChevronRight class="h-4 w-4" />
+		<MdiChevronRight class="h-4 w-4" />
 	</slot>
 </RangeCalendarPrimitive.NextButton>

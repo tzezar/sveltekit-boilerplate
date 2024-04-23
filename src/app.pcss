@@ -54,4 +54,22 @@
   body {
     @apply bg-background text-foreground;
   }
+  label {
+    @apply mt-2
+  }
+  form {
+    @apply flex flex-col
+  }
+  form button:last-of-type {
+    @apply mt-4
+  }
+  [data-fs-field-error] {
+    @apply text-sm font-light text-red-500
+  }
+  [data-fs-error][data-fs-control]  {
+    @apply border-red-500 outline-red-500 focus:outline-red-500
+  }
+  [data-placeholder] {
+    @apply text-muted-foreground
+  }
 }
